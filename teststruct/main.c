@@ -17,4 +17,11 @@ void testContact()
 	Contact c3 = { "김길동","01027780298", MAN, 2025 };
 
 	printContact(c1);
+	printContactptr(&c2);
+
+	int result1 = isEqualContact(c1, c2);
+	int result2 = isEqualContactptr(&c2, &c3);
+
+	printf("c1과 c2는 %s\n", result1 ? "같습니다." : "다릅니다");
+	printf("c2과 c3는 %s\n", result2 ? "같습니다." : "다릅니다");
 }
